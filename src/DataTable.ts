@@ -2,9 +2,9 @@ import {
     Directive, Input, EventEmitter, SimpleChange, OnChanges, DoCheck, IterableDiffers,
     IterableDiffer, Output
 } from "@angular/core";
-import includes from "lodash/includes";
-import orderBy from "lodash/orderBy";
-import slice from "lodash/slice";
+let includes = require("lodash/includes");
+let orderBy = require("lodash/orderBy");
+let slice = require("lodash/slice");
 
 import { ReplaySubject } from 'rxjs';
 

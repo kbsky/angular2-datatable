@@ -1,6 +1,6 @@
 import {Component, Input, OnChanges} from "@angular/core";
 import {DataTable} from "./DataTable";
-import min from "lodash/min";
+let min = require("lodash/min");
 
 @Component({
     selector: "mfBootstrapPaginator",
