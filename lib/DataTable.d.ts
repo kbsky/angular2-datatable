@@ -1,5 +1,6 @@
 import { EventEmitter, SimpleChange, OnChanges, DoCheck, IterableDiffers } from "@angular/core";
-import { ReplaySubject } from 'rxjs';
+import { ReplaySubject } from 'rxjs/ReplaySubject';
+import 'rxjs/add/operator/switchMap';
 export interface SortEvent {
     sortBy: string | string[];
     sortOrder: string;

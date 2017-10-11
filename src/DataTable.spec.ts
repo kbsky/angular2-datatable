@@ -4,6 +4,7 @@ import {DataTable, PageEvent, SortEvent} from "./DataTable";
 import {TestBed, ComponentFixture} from "@angular/core/testing";
 import {By} from "@angular/platform-browser";
 import * as _ from "lodash";
+import 'rxjs/add/operator/switchMap';
 
 @Component({
     template: `<table [mfData]="[]"></table>`

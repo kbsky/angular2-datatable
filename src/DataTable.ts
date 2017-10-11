@@ -6,7 +6,8 @@ let includes = require("lodash/includes");
 let orderBy = require("lodash/orderBy");
 let slice = require("lodash/slice");
 
-import { ReplaySubject } from 'rxjs';
+import { ReplaySubject } from 'rxjs/ReplaySubject';
+import 'rxjs/add/operator/switchMap';
 
 export interface SortEvent {
     sortBy: string|string[];
